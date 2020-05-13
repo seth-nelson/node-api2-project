@@ -1,8 +1,8 @@
 // Used to create and export an express application with its middleware/handlers/endpoints
 
-const express = require('expres');
+const express = require('express');
 const server = express();
-const postRouter = require('./router/posts-router');
+const postRouter = require('./posts/posts-router');
 
 server.use(express.json());
 server.use('/api/posts', postRouter);
